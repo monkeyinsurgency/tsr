@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "data:build": "node scripts/generateDB.js",
+    "data:build": "node gen_scripts/generateDB.js",
     "data:serve": "json-server --watch ./src/data/db.json",
     "test:jest": "jest --coverage"
   },
