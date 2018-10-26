@@ -1,0 +1,47 @@
+li {
+  list-style-type: none !important;
+}
+
+li.last-viewed  {
+  font-weight: bold;
+  color: red;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+a,
+a:visited {
+  color: #282c34;
+}
+
+form a {
+  display: block;
+  padding: .2em;
+  background: #282c34;
+  border: 1px solid white;
+  color: white !important;
+  margin-top: 5px;
+  width: 200px;
+  align: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+form input  {
+  padding: .5em;
+  background: white;
+  border: 1px solid #282c34;
+  margin-top: 5px;
+  width: 400px;
+  align: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+}
