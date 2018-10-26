@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import {store} from "statorgfc";
+import { store } from 'statorgfc';
 
 class ListItem extends Component {
   constructor(props) {

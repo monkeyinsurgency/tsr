@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import ListItem from './ListItem';
 import { fetchData } from '../services/FetchData';
-import {store} from 'statorgfc';
+import { store } from 'statorgfc';
 import Typography from '@material-ui/core/Typography';
 import 'typeface-roboto';
 

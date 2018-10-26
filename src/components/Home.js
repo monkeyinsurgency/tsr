@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import {store} from 'statorgfc';
+import { store } from 'statorgfc';
 import { fetchData } from '../services/FetchData';
 import Typography from '@material-ui/core/Typography';
-import withRoot from "../withRoot";
-import {withStyles} from "@material-ui/core";
-import PropTypes from "prop-types";
+import withRoot from '../withRoot';
+import { withStyles } from '@material-ui/core';
+import PropTypes from 'prop-types';
 
 const styles = theme => ({
   centre: {

@@ -4,14 +4,14 @@ import {
   Route,
   Redirect
 } from 'react-router-dom';
-import {store} from 'statorgfc';
+import { store } from 'statorgfc';
 
 import Home from './Home';
 import List from './List';
 import Detail from './Detail';
-import PropTypes from "prop-types";
-import withRoot from "../withRoot";
-import {withStyles} from "@material-ui/core";
+import PropTypes from 'prop-types';
+import withRoot from '../withRoot';
+import { withStyles } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 import 'typeface-roboto';
 
@@ -37,7 +37,7 @@ class Main extends Component {
         <Typography>
           <Switch>
             <Route exact path='/' component={Home} />
-            <Redirect from="/home" to="/"/>
+            <Redirect from='/home' to='/'/>
             <Route path='/list' component={List} />
             <Route path='/detail' component={Detail} />
           </Switch>

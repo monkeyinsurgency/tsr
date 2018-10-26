@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Main from './components/Main';
 import './App.css';
-import {store} from "statorgfc";
+import { store } from 'statorgfc';
 import 'typeface-roboto';
 import withRoot from './withRoot';
 import PropTypes from 'prop-types';

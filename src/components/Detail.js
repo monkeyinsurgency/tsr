@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { fetchData } from '../services/FetchData';
 import { Link } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import queryString from 'query-string';
-import {store} from 'statorgfc';
+import { store } from 'statorgfc';
 import Typography from '@material-ui/core/Typography';
 import 'typeface-roboto';
 
