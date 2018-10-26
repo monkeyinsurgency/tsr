@@ -1,11 +1,48 @@
 # TSR Coding Challenge
 This was specified as a PHP challenge, but inasmuch as I haven't touched PHP for years and it wasn't described as part of 
-this position, I opted instead to first knock out a React application, then circle back and spend a couple of days with PHP 
-if need be.
+this position, I was quite relieved to be able to do this in JavaScript.  I'm pretty pleased with the result.
 
 ## Under the bonnet
-This was built using Create React App, treating the provided CSV file as a database table, with a transaction CSV file replicating 
-another table.  If prompted, I will be happy to expand this exercise into a Docker stack with a separate DB of TSR's choosing.
+This was built using Create React App, treating the provided CSV file as a database table, with a transaction object added to replicate 
+what would be returned from an API.  
+
+### Building and running
+```javascript
+git clone git@github.com:monkeyinsurgency/tsr.git
+cd tsr
+yarn install
+yarn data:build (this converts the provided CSV file to usable JSON)
+yarn data:serve (this fires up the json-server, which replicates a RESTful API.)
+```
+This will provide a mock API server at `localhost:3000`.
+
+Then, in another terminal tab...
+```javascript
+yarn build
+yarn start
+```
+### Notes
+I treated this as if it were architected as interacting with cloud-based microservices.  All transactions are handles via 
+`services/FetchData.js` in one way or another, utilising standard CRUD commands.  Information about the books, either on the list page or the details page 
+utilises JSON retrieved from the API endpoints, available at `localhost:3000/books` and `localhost:3000/transactions`.  
+The `books` endpoint is search via a querystring parameter `Title`, referring to the book titles in the database.
+
+Requests made via `post` to `localhost:3000/transactions` builds a payload of the email address entered into the form on the 
+`/details` page, along with the book title.  The details page is also driving by a querystring parameter.  My thought was 
+that would allow for users to share the link.  The results of these transactions can be seen in `src/data/db.json`.
+
+A single high-level state store is used for data such as the most recently viewed book title, and the running list of recently 
+viewed books during a session.  If the user has "purchased" any books, that recently viewed list is replaced on the home page
+by a parsed list of transactions added to the database.
+
+For UI there is a very light application of Material-UI.
+
+App routing is handled by React Router.  Along with the single app-wide store, I wanted to avoid the overhead of including 
+Express or Redux.  It struck me as overkill.
+
+I set up Jest for testing, but ran into issues with Enzyme, so that didn't get very far.  Along with better unit testing, 
+going forward I would punch up the UI considerably and build out actual APIs, and deploy the various bits and bobs in a 
+Docker stack.  But
 
 ##Spec 
 PHP developer code test
