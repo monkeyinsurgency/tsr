@@ -44,14 +44,14 @@ I set up Jest for testing, but ran into issues with Enzyme, so that didn't get v
 going forward I would punch up the UI considerably and build out actual APIs, and deploy the various bits and bobs in a 
 Docker stack.  But
 
-##Spec 
+## Spec 
 PHP developer code test
 What are you building?
 We have a client who wants to build a new PHP web site for selling online Mr Men books. We have been given a limited amount of time to prototype a basic structure for the client. 
 The client has big expectations, and will want the site to be able to deal with high-traffic numbers, include a security model, plus look great and be integrated with a payment system. These are all future aspirations, but should be considered for the prototype even though they are not required at this stage.
 For this test try to keep it to 4 hours or less. This doesn’t have to be 100% complete, but obviously get as much in there as you can to show your capabilities.
 
-##The basic prototype site structure
+## The basic prototype site structure
 The prototype site you will produce for this code test should have the following pages and scripts:
 *	A home page (home.html)
 *	A document list page (list.html)
