@@ -79,7 +79,7 @@ Tasks we’d like you to carry out
 - b.	Do a little extra to make the solution to perform faster, using caching, query optimisation or other methods to get the most out of the server performance we have.
 - c.	Create an extra piece of functionality that gets the prototype slightly closer to the solution that they are looking for. We want to wow them so they give us the work, so the more functional it is, the more likely we’ll win the work.
 
-##What do we need from you?
+## What do we need from you?
 Once you have completed the task above, please provide the following documentation:
 1.	In your solution please take all necessary precautions as though this were a live environment. Make sure you have tested it and the functionality outlined has been tested.
 2.	Please return a zip file containing the site as a whole, any SQL required to build the database and any installation instructions. 
@@ -90,6 +90,6 @@ Once you have completed the task above, please provide the following documentati
 - d.	What additions did you do if any, please provided a short description.
 - e.	How long did the test take you?
 4.	If you have any questions please don’t hesitate to get in touch and we’ll do our best to help.
-##Good luck!
+## Good luck!
 
 
