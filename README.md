@@ -58,7 +58,7 @@ The prototype site you will produce for this code test should have the following
 *	A document preview page (details.html)
 *	The CSV file import script (books.csv)
 
-##The basic user journey 
+## The basic user journey 
 The visitors typically land on the home page. They can click through to view the document list and then click on one or more of the document previews available. On the preview page if they like the document they can enter their email address, buy the document, and return to the home page. If they don’t like it they can return to the list page.
 
 Tasks we’d like you to carry out
