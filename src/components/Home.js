@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import {store} from 'statorgfc';
 import { fetchData } from '../services/FetchData';
 import Typography from '@material-ui/core/Typography';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 import withRoot from "../withRoot";
 import {withStyles} from "@material-ui/core";
 import PropTypes from "prop-types";
@@ -50,7 +47,6 @@ class Home extends Component {
   }
 
   render() {
-    const { classes } = this.props;
     const purchases = store.get('purchases');
     const viewHistory = store.get('viewHistory');
     let homeRoute;
