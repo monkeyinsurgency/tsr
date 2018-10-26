@@ -45,7 +45,7 @@ Express or Redux.  It struck me as overkill.
 
 I set up Jest for testing, but ran into issues with Enzyme, so that didn't get very far.  Along with better unit testing, 
 going forward I would punch up the UI considerably and build out actual APIs, and deploy the various bits and bobs in a 
-Docker stack.  But
+Docker stack.
 
 ## Spec 
 PHP developer code test
