@@ -1,6 +1,6 @@
 import 'isomorphic-fetch';
 
-const apiUrl = 'http://localhost:3000/';
+const apiUrl = 'http://localhost:3001/';
 
 const fetchApi = (endPoint, payload = {}, method = 'get') => {
   const request = {

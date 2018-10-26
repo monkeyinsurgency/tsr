@@ -10,17 +10,20 @@ what would be returned from an API.
 ```javascript
 git clone git@github.com:monkeyinsurgency/tsr.git
 cd tsr
-yarn install
+yarn
 yarn data:build (this converts the provided CSV file to usable JSON)
 yarn data:serve (this fires up the json-server, which replicates a RESTful API.)
 ```
-This will provide a mock API server at `localhost:3000`.
+This will provide a mock API server at `localhost:3001`.
 
 Then, in another terminal tab...
 ```javascript
 yarn build
 yarn start
 ```
+
+This will start a server on `localhost:3000` and open a browser window pointing to the home page of the app.
+
 ### Notes
 I treated this as if it were architected as interacting with cloud-based microservices.  All transactions are handles via 
 `services/FetchData.js` in one way or another, utilising standard CRUD commands.  Information about the books, either on the list page or the details page 
