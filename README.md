@@ -25,16 +25,17 @@ yarn start
 This will start a server on `localhost:3000` and open a browser window pointing to the home page of the app.
 
 ### Notes
-I treated this as if it were architected as interacting with cloud-based microservices.  All transactions are handles via 
+I treated this as if it were architected as interacting with cloud-based microservices.  All transactions are handled via 
 `services/FetchData.js` in one way or another, utilising standard CRUD commands.  Information about the books, either on the list page or the details page 
-utilises JSON retrieved from the API endpoints, available at `localhost:3000/books` and `localhost:3000/transactions`.  
-The `books` endpoint is search via a querystring parameter `Title`, referring to the book titles in the database.
+utilises JSON retrieved from the API endpoints, available at `localhost:3000/books` and `localhost:3000/transactions`.
+  
+The `books` endpoint is searchable via a querystring parameter `Title`, referring to the book titles in the database.
 
 Requests made via `post` to `localhost:3000/transactions` builds a payload of the email address entered into the form on the 
-`/details` page, along with the book title.  The details page is also driving by a querystring parameter.  My thought was 
+`/details` page, along with the book title.  The details page is also driven by a querystring parameter.  My thought was 
 that would allow for users to share the link.  The results of these transactions can be seen in `src/data/db.json`.
 
-A single high-level state store is used for data such as the most recently viewed book title, and the running list of recently 
+A single high-level state store is used for data such as the "most recently viewed" book title, and the running list of recently 
 viewed books during a session.  If the user has "purchased" any books, that recently viewed list is replaced on the home page
 by a parsed list of transactions added to the database.
 
@@ -44,7 +45,7 @@ App routing is handled by React Router.  Along with the single app-wide store, I
 Express or Redux.  It struck me as overkill.
 
 I set up Jest for testing, but ran into issues with Enzyme, so that didn't get very far.  Along with better unit testing, 
-going forward I would punch up the UI considerably and build out actual APIs, and deploy the various bits and bobs in a 
+going forward I would punch up the UI considerably, build out actual APIs, and deploy the various bits and bobs in a 
 Docker stack.
 
 ## Spec 
